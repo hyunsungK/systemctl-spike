@@ -1,0 +1,11 @@
+[Unit]
+Description=Test Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/test-daemon.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
