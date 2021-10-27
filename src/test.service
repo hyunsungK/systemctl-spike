@@ -1,10 +1,10 @@
 [Unit]
-Description=Test Daemon
+Description=VDR multicast route register Daemon
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/test-daemon.sh
+ExecStart=/app/vdr-route/register-multicast-route.sh
 Restart=on-failure
 
 [Install]
